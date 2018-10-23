@@ -18,8 +18,8 @@ public class QRCodeScannerActivity extends AppCompatActivity implements View.OnC
 
     private static final int REQUEST_CAMERA_PERMISSION = 20;
     private IntentIntegrator qrScan;
-    Button capture;
-    private TextView scanResults;
+    protected Button scan;
+    protected TextView clueText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,12 @@ public class QRCodeScannerActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.barcode_scanner);
 
-        capture = findViewById(R.id.capture);
-        scanResults = findViewById(R.id.scan_results);
+        scan = findViewById(R.id.scan);
+        clueText = findViewById(R.id.clue_text);
 
         findViewById(R.id.cameraView).setVisibility(View.GONE);
         qrScan = new IntentIntegrator(this);
-        capture.setOnClickListener(this);
+        scan.setOnClickListener(this);
     }
 
     @Override
@@ -60,30 +60,6 @@ public class QRCodeScannerActivity extends AppCompatActivity implements View.OnC
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-
-//        if (intent != null) {
-//            String contents = intent.getStringExtra("SCAN_RESULT");
-//            //if qrcode has nothing in it
-//            if (contents == null) {
-//                Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
-//            } else {
-//                //if qr contains data
-//                scanResults.setText(contents);
-//            }
-//        } else {
-//            super.onActivityResult(requestCode, resultCode, intent);
-//        }
-
-        if(result != null) {
-            //if qrcode has nothing in it
-            if (result.getContents() == null) {
-                Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
-            } else {
-                //if qr contains data
-                scanResults.setText(result.getContents());
-            }
-        }
     }
 }
 

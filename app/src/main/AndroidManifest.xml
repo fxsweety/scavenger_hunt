@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".QRCodeScannerActivity" />
+
+        <activity android:name=".CafeClueActivity" />
+        <activity android:name=".ToddClueActivity" />
     </application>
 
 </manifest>
