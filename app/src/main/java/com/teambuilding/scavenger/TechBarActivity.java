@@ -7,12 +7,12 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
-public class ToddClueActivity extends QRCodeScannerActivity {
+public class TechBarActivity extends QRCodeScannerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("My chin needs to 90 degree to face him.");
+        clueText.setText("Though the name sounds I get a beer but I can get my stuff fixed.");
 
     }
 
@@ -20,19 +20,18 @@ public class ToddClueActivity extends QRCodeScannerActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-
         if(result != null) {
             //if qrcode has nothing in it
             if (result.getContents() == null) {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
             } else {
                 //if qr contains data
-                if (result.getContents().contains("todd")) {
+                if (result.getContents().contains("stationery")) {
                     Toast.makeText(this, "You got it.. Good Job..Lets get to the next one", Toast.LENGTH_LONG).show();
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            Intent i = new Intent(ToddClueActivity.this, StationeryClueActivity.class);
+                            Intent i = new Intent(TechBarActivity.this, CafeClueActivity.class);
                             startActivity(i);
                             finish();
                         }

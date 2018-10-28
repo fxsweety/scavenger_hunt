@@ -20,6 +20,7 @@ public class QRCodeScannerActivity extends AppCompatActivity implements View.OnC
     private IntentIntegrator qrScan;
     protected Button scan;
     protected TextView clueText;
+    SharedPreferencesHelper sharedPreferencesHelper = new SharedPreferencesHelper(getApplicationContext());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class QRCodeScannerActivity extends AppCompatActivity implements View.OnC
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+
     }
 }
 

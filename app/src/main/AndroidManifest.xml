@@ -22,6 +22,13 @@
 
         <activity android:name=".CafeClueActivity" />
         <activity android:name=".ToddClueActivity" />
+        <activity android:name=".StationeryClueActivity" />
+        <activity android:name=".SamiaClueActivity" />
+        <activity android:name=".CimCityClueActivity" />
+        <activity android:name=".RebeccaClueActivity" />
+        <activity android:name=".BrownBagActivity" />
+        <activity android:name=".TraceyClueActivity" />
+        <activity android:name=".TechBarActivity" />
     </application>
 
 </manifest>
