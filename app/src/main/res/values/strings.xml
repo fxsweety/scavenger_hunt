@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Scavenger</string>
+    <string name="app_name">Scavenger Hunt</string>
+    <string name="you_won_the_scavanger_hunt_goto_to_13th_to_audrey_bobby_sweety_to_know_if_you_won_before_others">Congrats! You won the scavenger hunt, goto to 13th floor meet Audrey/Bobby/Sweety to know if you won before others.</string>
 </resources>

@@ -6,9 +6,17 @@ import android.preference.PreferenceManager;
 
 public class SharedPreferencesHelper {
 
-    private final SharedPreferences mPrefs;
+    private SharedPreferences mPrefs;
+    private static SharedPreferencesHelper instance;
 
-    public SharedPreferencesHelper(Context context) {
+    private SharedPreferencesHelper(){ }
+
+    public static SharedPreferencesHelper getInstance(){
+        if (instance == null) instance = new SharedPreferencesHelper();
+        return instance;
+    }
+
+    public void Initialize(Context context) {
         mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 

@@ -29,6 +29,7 @@
         <activity android:name=".BrownBagActivity" />
         <activity android:name=".TraceyClueActivity" />
         <activity android:name=".TechBarActivity" />
+        <activity android:name=".SuccessActivity" />
     </application>
 
 </manifest>

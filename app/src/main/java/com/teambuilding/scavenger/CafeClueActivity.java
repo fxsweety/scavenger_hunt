@@ -30,9 +30,10 @@ public class CafeClueActivity extends QRCodeScannerActivity {
             } else {
                 //if qr contains data
                 if (result.getContents().contains("cafe")) {
-                    if (sharedPreferencesHelper.getCount() < 9) {
-                        sharedPreferencesHelper.setCount(sharedPreferencesHelper.getCount() + 1);
-                        Log.d("Sharedpref Count", String.valueOf(sharedPreferencesHelper.getCount()));
+                    if (SharedPreferencesHelper.getInstance().getCount() < 9) {
+                        SharedPreferencesHelper.getInstance().setCount(SharedPreferencesHelper.getInstance().getCount() + 1);
+                        SharedPreferencesHelper.getInstance().setActivityIndex(2);
+                        Log.d("Sharedpref Count", String.valueOf(SharedPreferencesHelper.getInstance().getCount()));
                         Toast.makeText(this, "You got it.. Good Job..Lets get to the next one", Toast.LENGTH_LONG).show();
                         new Handler().postDelayed(new Runnable() {
                             @Override
@@ -44,6 +45,9 @@ public class CafeClueActivity extends QRCodeScannerActivity {
                         }, 4000);
                     } else {
                         //Success Activity
+                        Intent i = new Intent(CafeClueActivity.this, TraceyClueActivity.class);
+                        startActivity(i);
+                        finish();
                     }
                 } else {
                     Toast.makeText(this, "Sorry not the right one.. Try again with the right QR code", Toast.LENGTH_LONG).show();
