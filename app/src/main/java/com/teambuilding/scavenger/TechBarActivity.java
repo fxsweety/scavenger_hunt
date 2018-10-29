@@ -27,7 +27,7 @@ public class TechBarActivity extends QRCodeScannerActivity {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
             } else {
                 //if qr contains data
-                if (result.getContents().contains("stationery")) {
+                if (result.getContents().contains("techbar")) {
                     if (SharedPreferencesHelper.getInstance().getCount() < 9) {
                         SharedPreferencesHelper.getInstance().setCount(SharedPreferencesHelper.getInstance().getCount() + 1);
                         Log.d("Sharedpref Count", String.valueOf(SharedPreferencesHelper.getInstance().getCount()));

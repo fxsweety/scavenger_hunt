@@ -28,7 +28,7 @@ public class SamiaClueActivity extends QRCodeScannerActivity {
                 Toast.makeText(this, "Result Not Found", Toast.LENGTH_LONG).show();
             } else {
                 //if qr contains data
-                if (result.getContents().contains("stationery")) {
+                if (result.getContents().contains("samia")) {
                     if (SharedPreferencesHelper.getInstance().getCount() < 9) {
                         SharedPreferencesHelper.getInstance().setCount(SharedPreferencesHelper.getInstance().getCount() + 1);
                         SharedPreferencesHelper.getInstance().setActivityIndex(5);

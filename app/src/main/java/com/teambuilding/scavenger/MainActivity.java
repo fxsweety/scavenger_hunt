@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.start_info);
             Button start = findViewById(R.id.start_button);
 
-            if(System.currentTimeMillis() >= 1540776600000l) {
+            if(System.currentTimeMillis() >= 1540838280000l) {
                 start.setVisibility(View.VISIBLE);
                 textView.setVisibility(View.GONE);
             } else {
