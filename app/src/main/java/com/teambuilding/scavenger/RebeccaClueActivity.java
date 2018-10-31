@@ -13,7 +13,7 @@ public class RebeccaClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("I can design your UI and make a common library");
+        clueText.setText("They like to ride horses and sing jazz for fun. If you need buttons, colors or fonts, it won't take long.");
 
     }
 

@@ -14,7 +14,7 @@ public class CafeClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("I want to get a coffee but I'm overlooking the uptown beer garden");
+        clueText.setText("I bought a coffee but I need a beer. I can see Uptown from here.");
 
     }
 

@@ -13,7 +13,7 @@ public class BrownBagActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("You can use my room for presentation but you need get your lunch.. where am I ?");
+        clueText.setText("Bring your lunch in a sack that's brown, clue is where you'll hear the sound");
 
     }
 

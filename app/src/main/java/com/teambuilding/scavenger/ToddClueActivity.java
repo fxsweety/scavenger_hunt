@@ -13,7 +13,7 @@ public class ToddClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("My chin needs to 90 degree to face him.");
+        clueText.setText("They gave advice for your trip away from home. Now they want to shake your phone.");
 
     }
 

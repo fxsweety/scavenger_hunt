@@ -13,7 +13,7 @@ public class StationeryClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("Where do I get batteries or a note to write on, Don't ring the bell just look under");
+        clueText.setText("Look under the bell to find a surprise. otherwise you will only leave with supplies");
 
     }
 

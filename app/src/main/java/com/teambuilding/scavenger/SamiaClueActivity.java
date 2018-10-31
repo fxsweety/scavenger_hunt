@@ -13,7 +13,7 @@ public class SamiaClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("I manage the api you call");
+        clueText.setText("For potluck they always bring tasty food; their team provides APIs for apps to consume");
 
     }
 

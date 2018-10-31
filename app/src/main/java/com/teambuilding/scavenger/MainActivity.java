@@ -19,14 +19,12 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferencesHelper.getInstance().Initialize(getApplicationContext());
         setContentView(R.layout.activity_main);
         if (SharedPreferencesHelper.getInstance().getCount() == 0) {
-            int[] intArray = {1,2,3,4,5,6,7,8,9};
-
             final int random =  ThreadLocalRandom.current().nextInt(1, 9);
             SharedPreferencesHelper.getInstance().setActivityIndex(random);
             TextView textView = findViewById(R.id.start_info);
             Button start = findViewById(R.id.start_button);
 
-            if(System.currentTimeMillis() >= 1540838280000l) {
+            if(System.currentTimeMillis() >= 1541185200000l) {
                 start.setVisibility(View.VISIBLE);
                 textView.setVisibility(View.GONE);
             } else {

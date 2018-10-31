@@ -13,7 +13,7 @@ public class CimCityClueActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("I can pitch new ideas and play pool here");
+        clueText.setText("Here you can pitch an idea new, then in the pitch you find the clue.");
 
     }
 

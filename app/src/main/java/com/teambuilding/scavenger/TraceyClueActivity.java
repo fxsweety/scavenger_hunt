@@ -13,7 +13,7 @@ public class TraceyClueActivity extends QRCodeScannerActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("Do you need to parental control for your kids watching time? I can help you because I manage the app");
+        clueText.setText("This manager has been at comcast for 14 years. Ask them about your wifi devices; they are all ears!");
 
     }
 

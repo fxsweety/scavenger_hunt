@@ -13,7 +13,7 @@ public class TechBarActivity extends QRCodeScannerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        clueText.setText("Though the name sounds I get a beer but I can get my stuff fixed.");
+        clueText.setText("TI'm not here to drink the liquor. I need my laptop unlocked quicker.");
 
     }
 
